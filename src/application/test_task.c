@@ -82,11 +82,11 @@ void test_task(void* pvParameters)
             //     printf("go home\r\n");
             // }
             //test_chip_full_operation();
-            // printf("Hash1: %d\n", hash_string("cell_ov1_alarm"));  // 输出234
-            // printf("Hash2: %d\n", hash_string("cell_iv1_alars"));  // 输出234
+            // printf("Hash1: %d\n", hash_string("cell_ov1_alarm"));  
+            // printf("Hash2: %d\n", hash_string("cell_iv1_alars"));  
             spi_flag = 0;
         }
-        //gd32f4x_timer2_led_j49_6_set_duty(50);
+        gd32f4x_timer2_led_j49_6_set_duty(50);
         // gpio_bit_set(LED_J49_6_GPIO,LED_J49_6_PIN);
         //printf("test_task running...\r\n");
         vTaskDelay(pdMS_TO_TICKS(100));
