@@ -72,9 +72,6 @@ typedef struct
     /* ============================= 电压相关参数 ============================= */
     uint16_t cell_ov1_alarm;                      /* 设置BMS电池的单体过压1告警值（两字节） (mV) 默认值：3600 */ 
 
-    /*验证测试数据*/
-    uint16_t cell_iv1_alars;                      /* 设置BMS电池的单体过压1告警值（两字节） (mV) 默认值：3600 */ 
-
     uint16_t cell_ov1_alarm_delay_time;           /* 设置BMS电池的单体过压1告警值触发时间（两字节） (ms) 默认值：1000 */
     uint16_t cell_ov1_release;                    /* 设置BMS电池的单体过压1告警恢复值（两字节） (mV) 默认值：3600 */
     uint16_t cell_ov1_release_delay_time;         /* 设置BMS电池的单体过压1告警恢复值触发时间（两字节） (ms) 默认值：6000 */

@@ -721,274 +721,273 @@ uint8_t parameter_rom_register(ROM_MCU_PARAMETER_TYPDEF* param_rom_mcu)
     memset(param_rom_mcu, 0, sizeof(ROM_MCU_PARAMETER_TYPDEF));
 
     err |= register_flash_parameter("cell_ov1_alarm",                      TYPE_UINT16,    &param_rom_mcu->cell_ov1_alarm);
-    err |= register_flash_parameter("cell_iv1_alars",                      TYPE_UINT16,    &param_rom_mcu->cell_iv1_alars);
-    // err |= register_flash_parameter("cell_ov1_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_ov1_alarm_delay_time);
-    // err |= register_flash_parameter("cell_ov1_release",                    TYPE_UINT16,    &param_rom_mcu->cell_ov1_release);
-    // err |= register_flash_parameter("cell_ov1_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_ov1_release_delay_time);
+    err |= register_flash_parameter("cell_ov1_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_ov1_alarm_delay_time);
+    err |= register_flash_parameter("cell_ov1_release",                    TYPE_UINT16,    &param_rom_mcu->cell_ov1_release);
+    err |= register_flash_parameter("cell_ov1_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_ov1_release_delay_time);
 
-    // err |= register_flash_parameter("cell_ov2_alarm",                      TYPE_UINT16,    &param_rom_mcu->cell_ov2_alarm);
-    // err |= register_flash_parameter("cell_ov2_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_ov2_alarm_delay_time);
-    // err |= register_flash_parameter("cell_ov2_release",                    TYPE_UINT16,    &param_rom_mcu->cell_ov2_release);
-    // err |= register_flash_parameter("cell_ov2_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_ov2_release_delay_time);    
+    err |= register_flash_parameter("cell_ov2_alarm",                      TYPE_UINT16,    &param_rom_mcu->cell_ov2_alarm);
+    err |= register_flash_parameter("cell_ov2_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_ov2_alarm_delay_time);
+    err |= register_flash_parameter("cell_ov2_release",                    TYPE_UINT16,    &param_rom_mcu->cell_ov2_release);
+    err |= register_flash_parameter("cell_ov2_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_ov2_release_delay_time);    
     
-    // err |= register_flash_parameter("cell_ov3_alarm",                      TYPE_UINT16,    &param_rom_mcu->cell_ov3_alarm);
-    // err |= register_flash_parameter("cell_ov3_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_ov3_alarm_delay_time);
-    // err |= register_flash_parameter("cell_ov3_release",                    TYPE_UINT16,    &param_rom_mcu->cell_ov3_release);
-    // err |= register_flash_parameter("cell_ov3_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_ov3_release_delay_time);    
-    // err |= register_flash_parameter("cell_ov3_unlock_soc",                 TYPE_UINT16,    &param_rom_mcu->cell_ov3_unlock_soc);
-    // err |= register_flash_parameter("cell_ov3_unlock_charge_current",      TYPE_UINT16,    &param_rom_mcu->cell_ov3_unlock_charge_current);
+    err |= register_flash_parameter("cell_ov3_alarm",                      TYPE_UINT16,    &param_rom_mcu->cell_ov3_alarm);
+    err |= register_flash_parameter("cell_ov3_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_ov3_alarm_delay_time);
+    err |= register_flash_parameter("cell_ov3_release",                    TYPE_UINT16,    &param_rom_mcu->cell_ov3_release);
+    err |= register_flash_parameter("cell_ov3_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_ov3_release_delay_time);    
+    err |= register_flash_parameter("cell_ov3_unlock_soc",                 TYPE_UINT16,    &param_rom_mcu->cell_ov3_unlock_soc);
+    err |= register_flash_parameter("cell_ov3_unlock_charge_current",      TYPE_UINT16,    &param_rom_mcu->cell_ov3_unlock_charge_current);
 
 
-    // err |= register_flash_parameter("cell_uv1_alarm",                      TYPE_UINT16,    &param_rom_mcu->cell_uv1_alarm);
-    // err |= register_flash_parameter("cell_uv1_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_uv1_alarm_delay_time);
-    // err |= register_flash_parameter("cell_uv1_release",                    TYPE_UINT16,    &param_rom_mcu->cell_uv1_release);
-    // err |= register_flash_parameter("cell_uv1_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_uv1_release_delay_time);
+    err |= register_flash_parameter("cell_uv1_alarm",                      TYPE_UINT16,    &param_rom_mcu->cell_uv1_alarm);
+    err |= register_flash_parameter("cell_uv1_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_uv1_alarm_delay_time);
+    err |= register_flash_parameter("cell_uv1_release",                    TYPE_UINT16,    &param_rom_mcu->cell_uv1_release);
+    err |= register_flash_parameter("cell_uv1_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_uv1_release_delay_time);
 
-    // err |= register_flash_parameter("cell_uv2_alarm",                      TYPE_UINT16,    &param_rom_mcu->cell_uv2_alarm);
-    // err |= register_flash_parameter("cell_uv2_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_uv2_alarm_delay_time);
-    // err |= register_flash_parameter("cell_uv2_release",                    TYPE_UINT16,    &param_rom_mcu->cell_uv2_release);
-    // err |= register_flash_parameter("cell_uv2_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_uv2_release_delay_time);    
+    err |= register_flash_parameter("cell_uv2_alarm",                      TYPE_UINT16,    &param_rom_mcu->cell_uv2_alarm);
+    err |= register_flash_parameter("cell_uv2_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_uv2_alarm_delay_time);
+    err |= register_flash_parameter("cell_uv2_release",                    TYPE_UINT16,    &param_rom_mcu->cell_uv2_release);
+    err |= register_flash_parameter("cell_uv2_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_uv2_release_delay_time);    
     
-    // err |= register_flash_parameter("cell_uv3_alarm",                      TYPE_UINT16,    &param_rom_mcu->cell_uv3_alarm);
-    // err |= register_flash_parameter("cell_uv3_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_uv3_alarm_delay_time);
-    // err |= register_flash_parameter("cell_uv3_release",                    TYPE_UINT16,    &param_rom_mcu->cell_uv3_release);
-    // err |= register_flash_parameter("cell_uv3_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_uv3_release_delay_time);    
-    // err |= register_flash_parameter("cell_uv3_unlock_charge_current",      TYPE_UINT16,    &param_rom_mcu->cell_uv3_unlock_charge_current);
+    err |= register_flash_parameter("cell_uv3_alarm",                      TYPE_UINT16,    &param_rom_mcu->cell_uv3_alarm);
+    err |= register_flash_parameter("cell_uv3_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_uv3_alarm_delay_time);
+    err |= register_flash_parameter("cell_uv3_release",                    TYPE_UINT16,    &param_rom_mcu->cell_uv3_release);
+    err |= register_flash_parameter("cell_uv3_release_delay_time",         TYPE_UINT16,    &param_rom_mcu->cell_uv3_release_delay_time);    
+    err |= register_flash_parameter("cell_uv3_unlock_charge_current",      TYPE_UINT16,    &param_rom_mcu->cell_uv3_unlock_charge_current);
 
 
-    // err |= register_flash_parameter("total_ov1_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_ov1_alarm);
-    // err |= register_flash_parameter("total_ov1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_ov1_alarm_delay_time);
-    // err |= register_flash_parameter("total_ov1_release",                   TYPE_UINT16,    &param_rom_mcu->total_ov1_release);
-    // err |= register_flash_parameter("total_ov1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_ov1_release_delay_time);
+    err |= register_flash_parameter("total_ov1_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_ov1_alarm);
+    err |= register_flash_parameter("total_ov1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_ov1_alarm_delay_time);
+    err |= register_flash_parameter("total_ov1_release",                   TYPE_UINT16,    &param_rom_mcu->total_ov1_release);
+    err |= register_flash_parameter("total_ov1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_ov1_release_delay_time);
 
-    // err |= register_flash_parameter("total_ov2_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_ov2_alarm);
-    // err |= register_flash_parameter("total_ov2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_ov2_alarm_delay_time);
-    // err |= register_flash_parameter("total_ov2_release",                   TYPE_UINT16,    &param_rom_mcu->total_ov2_release);
-    // err |= register_flash_parameter("total_ov2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_ov2_release_delay_time);    
+    err |= register_flash_parameter("total_ov2_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_ov2_alarm);
+    err |= register_flash_parameter("total_ov2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_ov2_alarm_delay_time);
+    err |= register_flash_parameter("total_ov2_release",                   TYPE_UINT16,    &param_rom_mcu->total_ov2_release);
+    err |= register_flash_parameter("total_ov2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_ov2_release_delay_time);    
     
-    // err |= register_flash_parameter("total_ov3_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_ov3_alarm);
-    // err |= register_flash_parameter("total_ov3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_ov3_alarm_delay_time);
-    // err |= register_flash_parameter("total_ov3_release",                   TYPE_UINT16,    &param_rom_mcu->total_ov3_release);
-    // err |= register_flash_parameter("total_ov3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_ov3_release_delay_time);    
-    // err |= register_flash_parameter("total_ov3_unlock_soc",                TYPE_UINT16,    &param_rom_mcu->total_ov3_unlock_soc);
-    // err |= register_flash_parameter("total_ov3_unlock_charge_current",     TYPE_UINT16,    &param_rom_mcu->total_ov3_unlock_charge_current);
+    err |= register_flash_parameter("total_ov3_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_ov3_alarm);
+    err |= register_flash_parameter("total_ov3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_ov3_alarm_delay_time);
+    err |= register_flash_parameter("total_ov3_release",                   TYPE_UINT16,    &param_rom_mcu->total_ov3_release);
+    err |= register_flash_parameter("total_ov3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_ov3_release_delay_time);    
+    err |= register_flash_parameter("total_ov3_unlock_soc",                TYPE_UINT16,    &param_rom_mcu->total_ov3_unlock_soc);
+    err |= register_flash_parameter("total_ov3_unlock_charge_current",     TYPE_UINT16,    &param_rom_mcu->total_ov3_unlock_charge_current);
 
-    // err |= register_flash_parameter("total_uv1_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_uv1_alarm);
-    // err |= register_flash_parameter("total_uv1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_uv1_alarm_delay_time);
-    // err |= register_flash_parameter("total_uv1_release",                   TYPE_UINT16,    &param_rom_mcu->total_uv1_release);
-    // err |= register_flash_parameter("total_uv1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_uv1_release_delay_time);
+    err |= register_flash_parameter("total_uv1_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_uv1_alarm);
+    err |= register_flash_parameter("total_uv1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_uv1_alarm_delay_time);
+    err |= register_flash_parameter("total_uv1_release",                   TYPE_UINT16,    &param_rom_mcu->total_uv1_release);
+    err |= register_flash_parameter("total_uv1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_uv1_release_delay_time);
 
-    // err |= register_flash_parameter("total_uv2_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_uv2_alarm);
-    // err |= register_flash_parameter("total_uv2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_uv2_alarm_delay_time);
-    // err |= register_flash_parameter("total_uv2_release",                   TYPE_UINT16,    &param_rom_mcu->total_uv2_release);
-    // err |= register_flash_parameter("total_uv2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_uv2_release_delay_time);    
+    err |= register_flash_parameter("total_uv2_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_uv2_alarm);
+    err |= register_flash_parameter("total_uv2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_uv2_alarm_delay_time);
+    err |= register_flash_parameter("total_uv2_release",                   TYPE_UINT16,    &param_rom_mcu->total_uv2_release);
+    err |= register_flash_parameter("total_uv2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_uv2_release_delay_time);    
     
-    // err |= register_flash_parameter("total_uv3_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_uv3_alarm);
-    // err |= register_flash_parameter("total_uv3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_uv3_alarm_delay_time);
-    // err |= register_flash_parameter("total_uv3_release",                   TYPE_UINT16,    &param_rom_mcu->total_uv3_release);
-    // err |= register_flash_parameter("total_uv3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_uv3_release_delay_time);    
-    // err |= register_flash_parameter("total_uv3_unlock_charge_current",     TYPE_UINT16,    &param_rom_mcu->total_uv3_unlock_charge_current);
+    err |= register_flash_parameter("total_uv3_alarm",                     TYPE_UINT16,    &param_rom_mcu->total_uv3_alarm);
+    err |= register_flash_parameter("total_uv3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->total_uv3_alarm_delay_time);
+    err |= register_flash_parameter("total_uv3_release",                   TYPE_UINT16,    &param_rom_mcu->total_uv3_release);
+    err |= register_flash_parameter("total_uv3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->total_uv3_release_delay_time);    
+    err |= register_flash_parameter("total_uv3_unlock_charge_current",     TYPE_UINT16,    &param_rom_mcu->total_uv3_unlock_charge_current);
 
 
-    // err |= register_flash_parameter("cell_diff_ov1_alarm",                     TYPE_UINT16,    &param_rom_mcu->cell_diff_ov1_alarm);
-    // err |= register_flash_parameter("cell_diff_ov1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->cell_diff_ov1_alarm_delay_time);
-    // err |= register_flash_parameter("cell_diff_ov1_release",                   TYPE_UINT16,    &param_rom_mcu->cell_diff_ov1_release);
-    // err |= register_flash_parameter("cell_diff_ov1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->cell_diff_ov1_release_delay_time);
+    err |= register_flash_parameter("cell_diff_ov1_alarm",                     TYPE_UINT16,    &param_rom_mcu->cell_diff_ov1_alarm);
+    err |= register_flash_parameter("cell_diff_ov1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->cell_diff_ov1_alarm_delay_time);
+    err |= register_flash_parameter("cell_diff_ov1_release",                   TYPE_UINT16,    &param_rom_mcu->cell_diff_ov1_release);
+    err |= register_flash_parameter("cell_diff_ov1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->cell_diff_ov1_release_delay_time);
 
-    // err |= register_flash_parameter("cell_diff_ov2_alarm",                     TYPE_UINT16,    &param_rom_mcu->cell_diff_ov2_alarm);
-    // err |= register_flash_parameter("cell_diff_ov2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->cell_diff_ov2_alarm_delay_time);
-    // err |= register_flash_parameter("cell_diff_ov2_release",                   TYPE_UINT16,    &param_rom_mcu->cell_diff_ov2_release);
-    // err |= register_flash_parameter("cell_diff_ov2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->cell_diff_ov2_release_delay_time);  
+    err |= register_flash_parameter("cell_diff_ov2_alarm",                     TYPE_UINT16,    &param_rom_mcu->cell_diff_ov2_alarm);
+    err |= register_flash_parameter("cell_diff_ov2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->cell_diff_ov2_alarm_delay_time);
+    err |= register_flash_parameter("cell_diff_ov2_release",                   TYPE_UINT16,    &param_rom_mcu->cell_diff_ov2_release);
+    err |= register_flash_parameter("cell_diff_ov2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->cell_diff_ov2_release_delay_time);  
 
-    // /* ============================= 电流相关参数 ============================= */
-    // err |= register_flash_parameter("charge_oc1_alarm",                         TYPE_UINT16,    &param_rom_mcu->charge_oc1_alarm);
-    // err |= register_flash_parameter("charge_oc1_alarm_delay_time",              TYPE_UINT16,    &param_rom_mcu->charge_oc1_alarm_delay_time);
-    // err |= register_flash_parameter("charge_oc2_alarm",                         TYPE_UINT16,    &param_rom_mcu->charge_oc2_alarm);
-    // err |= register_flash_parameter("charge_oc2_alarm_delay_time",              TYPE_UINT16,    &param_rom_mcu->charge_oc2_alarm_delay_time);    
-    // err |= register_flash_parameter("charge_oc3_alarm",                         TYPE_UINT16,    &param_rom_mcu->charge_oc3_alarm);
-    // err |= register_flash_parameter("charge_oc3_alarm_delay_time",              TYPE_UINT16,    &param_rom_mcu->charge_oc3_alarm_delay_time);
+    /* ============================= 电流相关参数 ============================= */
+    err |= register_flash_parameter("charge_oc1_alarm",                         TYPE_UINT16,    &param_rom_mcu->charge_oc1_alarm);
+    err |= register_flash_parameter("charge_oc1_alarm_delay_time",              TYPE_UINT16,    &param_rom_mcu->charge_oc1_alarm_delay_time);
+    err |= register_flash_parameter("charge_oc2_alarm",                         TYPE_UINT16,    &param_rom_mcu->charge_oc2_alarm);
+    err |= register_flash_parameter("charge_oc2_alarm_delay_time",              TYPE_UINT16,    &param_rom_mcu->charge_oc2_alarm_delay_time);    
+    err |= register_flash_parameter("charge_oc3_alarm",                         TYPE_UINT16,    &param_rom_mcu->charge_oc3_alarm);
+    err |= register_flash_parameter("charge_oc3_alarm_delay_time",              TYPE_UINT16,    &param_rom_mcu->charge_oc3_alarm_delay_time);
 
-    // err |= register_flash_parameter("discharge_oc1_alarm",                      TYPE_UINT16,    &param_rom_mcu->discharge_oc1_alarm);
-    // err |= register_flash_parameter("discharge_oc1_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->discharge_oc1_alarm_delay_time);
-    // err |= register_flash_parameter("discharge_oc2_alarm",                      TYPE_UINT16,    &param_rom_mcu->discharge_oc2_alarm);
-    // err |= register_flash_parameter("discharge_oc2_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->discharge_oc2_alarm_delay_time);    
-    // err |= register_flash_parameter("discharge_oc3_alarm",                      TYPE_UINT16,    &param_rom_mcu->discharge_oc3_alarm);
-    // err |= register_flash_parameter("discharge_oc3_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->discharge_oc3_alarm_delay_time);
+    err |= register_flash_parameter("discharge_oc1_alarm",                      TYPE_UINT16,    &param_rom_mcu->discharge_oc1_alarm);
+    err |= register_flash_parameter("discharge_oc1_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->discharge_oc1_alarm_delay_time);
+    err |= register_flash_parameter("discharge_oc2_alarm",                      TYPE_UINT16,    &param_rom_mcu->discharge_oc2_alarm);
+    err |= register_flash_parameter("discharge_oc2_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->discharge_oc2_alarm_delay_time);    
+    err |= register_flash_parameter("discharge_oc3_alarm",                      TYPE_UINT16,    &param_rom_mcu->discharge_oc3_alarm);
+    err |= register_flash_parameter("discharge_oc3_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->discharge_oc3_alarm_delay_time);
     
-    // err |= register_flash_parameter("short_circuit_alarm",                      TYPE_UINT16,    &param_rom_mcu->short_circuit_alarm);
-    // err |= register_flash_parameter("short_circuit_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->short_circuit_alarm_delay_time);
+    err |= register_flash_parameter("short_circuit_alarm",                      TYPE_UINT16,    &param_rom_mcu->short_circuit_alarm);
+    err |= register_flash_parameter("short_circuit_alarm_delay_time",           TYPE_UINT16,    &param_rom_mcu->short_circuit_alarm_delay_time);
 
-    // /* ============================= 温度相关参数 ============================= */
-    // err |= register_flash_parameter("charge_cell_ot1_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ot1_alarm);
-    // err |= register_flash_parameter("charge_cell_ot1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ot1_alarm_delay_time);
-    // err |= register_flash_parameter("charge_cell_ot1_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ot1_release);
-    // err |= register_flash_parameter("charge_cell_ot1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ot1_release_delay_time);
+    /* ============================= 温度相关参数 ============================= */
+    err |= register_flash_parameter("charge_cell_ot1_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ot1_alarm);
+    err |= register_flash_parameter("charge_cell_ot1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ot1_alarm_delay_time);
+    err |= register_flash_parameter("charge_cell_ot1_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ot1_release);
+    err |= register_flash_parameter("charge_cell_ot1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ot1_release_delay_time);
 
-    // err |= register_flash_parameter("charge_cell_ot2_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ot2_alarm);
-    // err |= register_flash_parameter("charge_cell_ot2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ot2_alarm_delay_time);
-    // err |= register_flash_parameter("charge_cell_ot2_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ot2_release);
-    // err |= register_flash_parameter("charge_cell_ot2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ot2_release_delay_time);    
+    err |= register_flash_parameter("charge_cell_ot2_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ot2_alarm);
+    err |= register_flash_parameter("charge_cell_ot2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ot2_alarm_delay_time);
+    err |= register_flash_parameter("charge_cell_ot2_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ot2_release);
+    err |= register_flash_parameter("charge_cell_ot2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ot2_release_delay_time);    
     
-    // err |= register_flash_parameter("charge_cell_ot3_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ot3_alarm);
-    // err |= register_flash_parameter("charge_cell_ot3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ot3_alarm_delay_time);
-    // err |= register_flash_parameter("charge_cell_ot3_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ot3_release);
-    // err |= register_flash_parameter("charge_cell_ot3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ot3_release_delay_time);  
+    err |= register_flash_parameter("charge_cell_ot3_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ot3_alarm);
+    err |= register_flash_parameter("charge_cell_ot3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ot3_alarm_delay_time);
+    err |= register_flash_parameter("charge_cell_ot3_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ot3_release);
+    err |= register_flash_parameter("charge_cell_ot3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ot3_release_delay_time);  
     
-    // err |= register_flash_parameter("charge_cell_ut1_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ut1_alarm);
-    // err |= register_flash_parameter("charge_cell_ut1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ut1_alarm_delay_time);
-    // err |= register_flash_parameter("charge_cell_ut1_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ut1_release);
-    // err |= register_flash_parameter("charge_cell_ut1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ut1_release_delay_time);
+    err |= register_flash_parameter("charge_cell_ut1_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ut1_alarm);
+    err |= register_flash_parameter("charge_cell_ut1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ut1_alarm_delay_time);
+    err |= register_flash_parameter("charge_cell_ut1_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ut1_release);
+    err |= register_flash_parameter("charge_cell_ut1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ut1_release_delay_time);
 
-    // err |= register_flash_parameter("charge_cell_ut2_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ut2_alarm);
-    // err |= register_flash_parameter("charge_cell_ut2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ut2_alarm_delay_time);
-    // err |= register_flash_parameter("charge_cell_ut2_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ut2_release);
-    // err |= register_flash_parameter("charge_cell_ut2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ut2_release_delay_time);    
+    err |= register_flash_parameter("charge_cell_ut2_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ut2_alarm);
+    err |= register_flash_parameter("charge_cell_ut2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ut2_alarm_delay_time);
+    err |= register_flash_parameter("charge_cell_ut2_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ut2_release);
+    err |= register_flash_parameter("charge_cell_ut2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ut2_release_delay_time);    
     
-    // err |= register_flash_parameter("charge_cell_ut3_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ut3_alarm);
-    // err |= register_flash_parameter("charge_cell_ut3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ut3_alarm_delay_time);
-    // err |= register_flash_parameter("charge_cell_ut3_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ut3_release);
-    // err |= register_flash_parameter("charge_cell_ut3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ut3_release_delay_time);     
+    err |= register_flash_parameter("charge_cell_ut3_alarm",                     TYPE_UINT16,    &param_rom_mcu->charge_cell_ut3_alarm);
+    err |= register_flash_parameter("charge_cell_ut3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->charge_cell_ut3_alarm_delay_time);
+    err |= register_flash_parameter("charge_cell_ut3_release",                   TYPE_UINT16,    &param_rom_mcu->charge_cell_ut3_release);
+    err |= register_flash_parameter("charge_cell_ut3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->charge_cell_ut3_release_delay_time);     
 
 
-    // err |= register_flash_parameter("discharge_cell_ot1_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot1_alarm);
-    // err |= register_flash_parameter("discharge_cell_ot1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot1_alarm_delay_time);
-    // err |= register_flash_parameter("discharge_cell_ot1_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot1_release);
-    // err |= register_flash_parameter("discharge_cell_ot1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot1_release_delay_time);
+    err |= register_flash_parameter("discharge_cell_ot1_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot1_alarm);
+    err |= register_flash_parameter("discharge_cell_ot1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot1_alarm_delay_time);
+    err |= register_flash_parameter("discharge_cell_ot1_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot1_release);
+    err |= register_flash_parameter("discharge_cell_ot1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot1_release_delay_time);
 
-    // err |= register_flash_parameter("discharge_cell_ot2_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot2_alarm);
-    // err |= register_flash_parameter("discharge_cell_ot2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot2_alarm_delay_time);
-    // err |= register_flash_parameter("discharge_cell_ot2_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot2_release);
-    // err |= register_flash_parameter("discharge_cell_ot2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot2_release_delay_time);    
+    err |= register_flash_parameter("discharge_cell_ot2_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot2_alarm);
+    err |= register_flash_parameter("discharge_cell_ot2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot2_alarm_delay_time);
+    err |= register_flash_parameter("discharge_cell_ot2_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot2_release);
+    err |= register_flash_parameter("discharge_cell_ot2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot2_release_delay_time);    
    
-    // err |= register_flash_parameter("discharge_cell_ot3_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot3_alarm);
-    // err |= register_flash_parameter("discharge_cell_ot3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot3_alarm_delay_time);
-    // err |= register_flash_parameter("discharge_cell_ot3_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot3_release);
-    // err |= register_flash_parameter("discharge_cell_ot3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot3_release_delay_time);  
+    err |= register_flash_parameter("discharge_cell_ot3_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot3_alarm);
+    err |= register_flash_parameter("discharge_cell_ot3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot3_alarm_delay_time);
+    err |= register_flash_parameter("discharge_cell_ot3_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot3_release);
+    err |= register_flash_parameter("discharge_cell_ot3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ot3_release_delay_time);  
     
-    // err |= register_flash_parameter("discharge_cell_ut1_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut1_alarm);
-    // err |= register_flash_parameter("discharge_cell_ut1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut1_alarm_delay_time);
-    // err |= register_flash_parameter("discharge_cell_ut1_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut1_release);
-    // err |= register_flash_parameter("discharge_cell_ut1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut1_release_delay_time);
+    err |= register_flash_parameter("discharge_cell_ut1_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut1_alarm);
+    err |= register_flash_parameter("discharge_cell_ut1_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut1_alarm_delay_time);
+    err |= register_flash_parameter("discharge_cell_ut1_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut1_release);
+    err |= register_flash_parameter("discharge_cell_ut1_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut1_release_delay_time);
 
-    // err |= register_flash_parameter("discharge_cell_ut2_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut2_alarm);
-    // err |= register_flash_parameter("discharge_cell_ut2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut2_alarm_delay_time);
-    // err |= register_flash_parameter("discharge_cell_ut2_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut2_release);
-    // err |= register_flash_parameter("discharge_cell_ut2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut2_release_delay_time);    
+    err |= register_flash_parameter("discharge_cell_ut2_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut2_alarm);
+    err |= register_flash_parameter("discharge_cell_ut2_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut2_alarm_delay_time);
+    err |= register_flash_parameter("discharge_cell_ut2_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut2_release);
+    err |= register_flash_parameter("discharge_cell_ut2_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut2_release_delay_time);    
  
-    // err |= register_flash_parameter("discharge_cell_ut3_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut3_alarm);
-    // err |= register_flash_parameter("discharge_cell_ut3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut3_alarm_delay_time);
-    // err |= register_flash_parameter("discharge_cell_ut3_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut3_release);
-    // err |= register_flash_parameter("discharge_cell_ut3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut3_release_delay_time);
+    err |= register_flash_parameter("discharge_cell_ut3_alarm",                     TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut3_alarm);
+    err |= register_flash_parameter("discharge_cell_ut3_alarm_delay_time",          TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut3_alarm_delay_time);
+    err |= register_flash_parameter("discharge_cell_ut3_release",                   TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut3_release);
+    err |= register_flash_parameter("discharge_cell_ut3_release_delay_time",        TYPE_UINT16,    &param_rom_mcu->discharge_cell_ut3_release_delay_time);
 
     
-    // err |= register_flash_parameter("cell_ot1_alarm",                               TYPE_UINT16,    &param_rom_mcu->cell_ot1_alarm);
-    // err |= register_flash_parameter("cell_ot1_alarm_delay_time",                    TYPE_UINT16,    &param_rom_mcu->cell_ot1_alarm_delay_time);
-    // err |= register_flash_parameter("cell_ot1_release",                             TYPE_UINT16,    &param_rom_mcu->cell_ot1_release);
-    // err |= register_flash_parameter("cell_ot1_release_delay_time",                  TYPE_UINT16,    &param_rom_mcu->cell_ot1_release_delay_time);
+    err |= register_flash_parameter("cell_ot1_alarm",                               TYPE_UINT16,    &param_rom_mcu->cell_ot1_alarm);
+    err |= register_flash_parameter("cell_ot1_alarm_delay_time",                    TYPE_UINT16,    &param_rom_mcu->cell_ot1_alarm_delay_time);
+    err |= register_flash_parameter("cell_ot1_release",                             TYPE_UINT16,    &param_rom_mcu->cell_ot1_release);
+    err |= register_flash_parameter("cell_ot1_release_delay_time",                  TYPE_UINT16,    &param_rom_mcu->cell_ot1_release_delay_time);
 
-    // err |= register_flash_parameter("cell_ot2_alarm",                               TYPE_UINT16,    &param_rom_mcu->cell_ot2_alarm);
-    // err |= register_flash_parameter("cell_ot2_alarm_delay_time",                    TYPE_UINT16,    &param_rom_mcu->cell_ot2_alarm_delay_time);
-    // err |= register_flash_parameter("cell_ot2_release",                             TYPE_UINT16,    &param_rom_mcu->cell_ot2_release);
-    // err |= register_flash_parameter("cell_ot2_release_delay_time",                  TYPE_UINT16,    &param_rom_mcu->cell_ot2_release_delay_time);  
+    err |= register_flash_parameter("cell_ot2_alarm",                               TYPE_UINT16,    &param_rom_mcu->cell_ot2_alarm);
+    err |= register_flash_parameter("cell_ot2_alarm_delay_time",                    TYPE_UINT16,    &param_rom_mcu->cell_ot2_alarm_delay_time);
+    err |= register_flash_parameter("cell_ot2_release",                             TYPE_UINT16,    &param_rom_mcu->cell_ot2_release);
+    err |= register_flash_parameter("cell_ot2_release_delay_time",                  TYPE_UINT16,    &param_rom_mcu->cell_ot2_release_delay_time);  
 
-    // err |= register_flash_parameter("cell_diff_temp1_alarm",                        TYPE_UINT16,    &param_rom_mcu->cell_diff_temp1_alarm);
-    // err |= register_flash_parameter("cell_diff_temp1_alarm_delay_time",             TYPE_UINT16,    &param_rom_mcu->cell_diff_temp1_alarm_delay_time);
-    // err |= register_flash_parameter("cell_diff_temp1_release",                      TYPE_UINT16,    &param_rom_mcu->cell_diff_temp1_release);
-    // err |= register_flash_parameter("cell_diff_temp1_release_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_diff_temp1_release_delay_time);
+    err |= register_flash_parameter("cell_diff_temp1_alarm",                        TYPE_UINT16,    &param_rom_mcu->cell_diff_temp1_alarm);
+    err |= register_flash_parameter("cell_diff_temp1_alarm_delay_time",             TYPE_UINT16,    &param_rom_mcu->cell_diff_temp1_alarm_delay_time);
+    err |= register_flash_parameter("cell_diff_temp1_release",                      TYPE_UINT16,    &param_rom_mcu->cell_diff_temp1_release);
+    err |= register_flash_parameter("cell_diff_temp1_release_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_diff_temp1_release_delay_time);
     
-    // err |= register_flash_parameter("cell_diff_temp2_alarm",                        TYPE_UINT16,    &param_rom_mcu->cell_diff_temp2_alarm);
-    // err |= register_flash_parameter("cell_diff_temp2_alarm_delay_time",             TYPE_UINT16,    &param_rom_mcu->cell_diff_temp2_alarm_delay_time);
-    // err |= register_flash_parameter("cell_diff_temp2_release",                      TYPE_UINT16,    &param_rom_mcu->cell_diff_temp2_release);
-    // err |= register_flash_parameter("cell_diff_temp2_release_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_diff_temp2_release_delay_time);  
+    err |= register_flash_parameter("cell_diff_temp2_alarm",                        TYPE_UINT16,    &param_rom_mcu->cell_diff_temp2_alarm);
+    err |= register_flash_parameter("cell_diff_temp2_alarm_delay_time",             TYPE_UINT16,    &param_rom_mcu->cell_diff_temp2_alarm_delay_time);
+    err |= register_flash_parameter("cell_diff_temp2_release",                      TYPE_UINT16,    &param_rom_mcu->cell_diff_temp2_release);
+    err |= register_flash_parameter("cell_diff_temp2_release_delay_time",           TYPE_UINT16,    &param_rom_mcu->cell_diff_temp2_release_delay_time);  
 
 
-    // err |= register_flash_parameter("env_ot_high1_alarm",                           TYPE_UINT16,    &param_rom_mcu->env_ot_high1_alarm);
-    // err |= register_flash_parameter("env_ot_high1_alarm_delay_time",                TYPE_UINT16,    &param_rom_mcu->env_ot_high1_alarm_delay_time);
-    // err |= register_flash_parameter("env_ot_high1_release",                         TYPE_UINT16,    &param_rom_mcu->env_ot_high1_release);
-    // err |= register_flash_parameter("env_ot_high1_release_delay_time",              TYPE_UINT16,    &param_rom_mcu->env_ot_high1_release_delay_time);
+    err |= register_flash_parameter("env_ot_high1_alarm",                           TYPE_UINT16,    &param_rom_mcu->env_ot_high1_alarm);
+    err |= register_flash_parameter("env_ot_high1_alarm_delay_time",                TYPE_UINT16,    &param_rom_mcu->env_ot_high1_alarm_delay_time);
+    err |= register_flash_parameter("env_ot_high1_release",                         TYPE_UINT16,    &param_rom_mcu->env_ot_high1_release);
+    err |= register_flash_parameter("env_ot_high1_release_delay_time",              TYPE_UINT16,    &param_rom_mcu->env_ot_high1_release_delay_time);
     
-    // err |= register_flash_parameter("env_ot_high2_alarm",                           TYPE_UINT16,    &param_rom_mcu->env_ot_high2_alarm);
-    // err |= register_flash_parameter("env_ot_high2_alarm_delay_time",                TYPE_UINT16,    &param_rom_mcu->env_ot_high2_alarm_delay_time);
-    // err |= register_flash_parameter("env_ot_high2_release",                         TYPE_UINT16,    &param_rom_mcu->env_ot_high2_release);
-    // err |= register_flash_parameter("env_ot_high2_release_delay_time",              TYPE_UINT16,    &param_rom_mcu->env_ot_high2_release_delay_time);  
+    err |= register_flash_parameter("env_ot_high2_alarm",                           TYPE_UINT16,    &param_rom_mcu->env_ot_high2_alarm);
+    err |= register_flash_parameter("env_ot_high2_alarm_delay_time",                TYPE_UINT16,    &param_rom_mcu->env_ot_high2_alarm_delay_time);
+    err |= register_flash_parameter("env_ot_high2_release",                         TYPE_UINT16,    &param_rom_mcu->env_ot_high2_release);
+    err |= register_flash_parameter("env_ot_high2_release_delay_time",              TYPE_UINT16,    &param_rom_mcu->env_ot_high2_release_delay_time);  
 
-    // err |= register_flash_parameter("env_ut_low1_alarm",                            TYPE_UINT16,    &param_rom_mcu->env_ut_low1_alarm);
-    // err |= register_flash_parameter("env_ut_low1_alarm_delay_time",                 TYPE_UINT16,    &param_rom_mcu->env_ut_low1_alarm_delay_time);
-    // err |= register_flash_parameter("env_ut_low1_release",                          TYPE_UINT16,    &param_rom_mcu->env_ut_low1_release);
-    // err |= register_flash_parameter("env_ut_low1_release_delay_time",               TYPE_UINT16,    &param_rom_mcu->env_ut_low1_release_delay_time);
+    err |= register_flash_parameter("env_ut_low1_alarm",                            TYPE_UINT16,    &param_rom_mcu->env_ut_low1_alarm);
+    err |= register_flash_parameter("env_ut_low1_alarm_delay_time",                 TYPE_UINT16,    &param_rom_mcu->env_ut_low1_alarm_delay_time);
+    err |= register_flash_parameter("env_ut_low1_release",                          TYPE_UINT16,    &param_rom_mcu->env_ut_low1_release);
+    err |= register_flash_parameter("env_ut_low1_release_delay_time",               TYPE_UINT16,    &param_rom_mcu->env_ut_low1_release_delay_time);
 
-    // err |= register_flash_parameter("env_ut_low2_alarm",                            TYPE_UINT16,    &param_rom_mcu->env_ut_low2_alarm);
-    // err |= register_flash_parameter("env_ut_low2_alarm_delay_time",                 TYPE_UINT16,    &param_rom_mcu->env_ut_low2_alarm_delay_time);
-    // err |= register_flash_parameter("env_ut_low2_release",                          TYPE_UINT16,    &param_rom_mcu->env_ut_low2_release);
-    // err |= register_flash_parameter("env_ut_low2_release_delay_time",               TYPE_UINT16,    &param_rom_mcu->env_ut_low2_release_delay_time);  
+    err |= register_flash_parameter("env_ut_low2_alarm",                            TYPE_UINT16,    &param_rom_mcu->env_ut_low2_alarm);
+    err |= register_flash_parameter("env_ut_low2_alarm_delay_time",                 TYPE_UINT16,    &param_rom_mcu->env_ut_low2_alarm_delay_time);
+    err |= register_flash_parameter("env_ut_low2_release",                          TYPE_UINT16,    &param_rom_mcu->env_ut_low2_release);
+    err |= register_flash_parameter("env_ut_low2_release_delay_time",               TYPE_UINT16,    &param_rom_mcu->env_ut_low2_release_delay_time);  
 
 
-    // err |= register_flash_parameter("cell_balance_start_voltage",                   TYPE_UINT16,    &param_rom_mcu->cell_balance_start_voltage);
-    // err |= register_flash_parameter("cell_balance_start_diff",                      TYPE_UINT16,    &param_rom_mcu->cell_balance_start_diff);
-    // err |= register_flash_parameter("cell_sleep_voltage",                           TYPE_UINT16,    &param_rom_mcu->cell_sleep_voltage);
-    // err |= register_flash_parameter("cell_sleep_duration",                          TYPE_UINT16,    &param_rom_mcu->cell_sleep_duration);  
-    // err |= register_flash_parameter("cell_full_charge_voltage",                     TYPE_UINT16,    &param_rom_mcu->cell_full_charge_voltage);
-    // err |= register_flash_parameter("full_charge_current",                          TYPE_UINT16,    &param_rom_mcu->full_charge_current);  
+    err |= register_flash_parameter("cell_balance_start_voltage",                   TYPE_UINT16,    &param_rom_mcu->cell_balance_start_voltage);
+    err |= register_flash_parameter("cell_balance_start_diff",                      TYPE_UINT16,    &param_rom_mcu->cell_balance_start_diff);
+    err |= register_flash_parameter("cell_sleep_voltage",                           TYPE_UINT16,    &param_rom_mcu->cell_sleep_voltage);
+    err |= register_flash_parameter("cell_sleep_duration",                          TYPE_UINT16,    &param_rom_mcu->cell_sleep_duration);  
+    err |= register_flash_parameter("cell_full_charge_voltage",                     TYPE_UINT16,    &param_rom_mcu->cell_full_charge_voltage);
+    err |= register_flash_parameter("full_charge_current",                          TYPE_UINT16,    &param_rom_mcu->full_charge_current);  
 
-    // err |= register_flash_parameter("battery_capacity_initial",                     TYPE_UINT16,    &param_rom_mcu->battery_capacity_initial);
-    // err |= register_flash_parameter("battery_capacity_current",                     TYPE_UINT16,    &param_rom_mcu->battery_capacity_current);  
-    // err |= register_flash_parameter("cycle_count",                                  TYPE_UINT16,    &param_rom_mcu->cycle_count);
-    // err |= register_flash_parameter("total_runtime",                                TYPE_UINT16,    &param_rom_mcu->total_runtime);  
+    err |= register_flash_parameter("battery_capacity_initial",                     TYPE_UINT16,    &param_rom_mcu->battery_capacity_initial);
+    err |= register_flash_parameter("battery_capacity_current",                     TYPE_UINT16,    &param_rom_mcu->battery_capacity_current);  
+    err |= register_flash_parameter("cycle_count",                                  TYPE_UINT16,    &param_rom_mcu->cycle_count);
+    err |= register_flash_parameter("total_runtime",                                TYPE_UINT16,    &param_rom_mcu->total_runtime);  
 
-    // err |= register_flash_parameter("soc_initial",                                  TYPE_UINT16,    &param_rom_mcu->soc_initial);
-    // err |= register_flash_parameter("soc_low_alarm",                                TYPE_UINT16,    &param_rom_mcu->soc_low_alarm);
-    // err |= register_flash_parameter("soh_initial",                                  TYPE_UINT16,    &param_rom_mcu->soh_initial);  
-    // err |= register_flash_parameter("soh_alarm",                                    TYPE_UINT16,    &param_rom_mcu->soh_alarm);
-    // err |= register_flash_parameter("sod_deep_discharge",                           TYPE_UINT16,    &param_rom_mcu->sod_deep_discharge); 
+    err |= register_flash_parameter("soc_initial",                                  TYPE_UINT16,    &param_rom_mcu->soc_initial);
+    err |= register_flash_parameter("soc_low_alarm",                                TYPE_UINT16,    &param_rom_mcu->soc_low_alarm);
+    err |= register_flash_parameter("soh_initial",                                  TYPE_UINT16,    &param_rom_mcu->soh_initial);  
+    err |= register_flash_parameter("soh_alarm",                                    TYPE_UINT16,    &param_rom_mcu->soh_alarm);
+    err |= register_flash_parameter("sod_deep_discharge",                           TYPE_UINT16,    &param_rom_mcu->sod_deep_discharge); 
 
-    // err |= register_flash_parameter("heater_off_temp",                              TYPE_UINT16,    &param_rom_mcu->heater_off_temp);
-    // err |= register_flash_parameter("device_sn_high",                               TYPE_UINT16,    &param_rom_mcu->device_sn_high);
-    // err |= register_flash_parameter("device_sn_low",                                TYPE_UINT16,    &param_rom_mcu->device_sn_low);
-    // err |= register_flash_parameter("device_id",                                    TYPE_UINT16,    &param_rom_mcu->device_id);
-    // err |= register_flash_parameter("buzzer_duration",                              TYPE_UINT16,    &param_rom_mcu->buzzer_duration);
-    // err |= register_flash_parameter("power_on_activation",                          TYPE_UINT16,    &param_rom_mcu->power_on_activation);
-    // err |= register_flash_parameter("shutdown_cmd",                                 TYPE_UINT16,    &param_rom_mcu->shutdown_cmd);
+    err |= register_flash_parameter("heater_off_temp",                              TYPE_UINT16,    &param_rom_mcu->heater_off_temp);
+    err |= register_flash_parameter("device_sn_high",                               TYPE_UINT16,    &param_rom_mcu->device_sn_high);
+    err |= register_flash_parameter("device_sn_low",                                TYPE_UINT16,    &param_rom_mcu->device_sn_low);
+    err |= register_flash_parameter("device_id",                                    TYPE_UINT16,    &param_rom_mcu->device_id);
+    err |= register_flash_parameter("buzzer_duration",                              TYPE_UINT16,    &param_rom_mcu->buzzer_duration);
+    err |= register_flash_parameter("power_on_activation",                          TYPE_UINT16,    &param_rom_mcu->power_on_activation);
+    err |= register_flash_parameter("shutdown_cmd",                                 TYPE_UINT16,    &param_rom_mcu->shutdown_cmd);
     
-    // err |= register_flash_parameter("heater_on_cmd",                                TYPE_UINT16,    &param_rom_mcu->heater_on_cmd);
-    // err |= register_flash_parameter("heater_off_cmd",                               TYPE_UINT16,    &param_rom_mcu->heater_off_cmd);
-    // err |= register_flash_parameter("heater_auto_off_temp",                         TYPE_UINT16,    &param_rom_mcu->heater_auto_off_temp);
+    err |= register_flash_parameter("heater_on_cmd",                                TYPE_UINT16,    &param_rom_mcu->heater_on_cmd);
+    err |= register_flash_parameter("heater_off_cmd",                               TYPE_UINT16,    &param_rom_mcu->heater_off_cmd);
+    err |= register_flash_parameter("heater_auto_off_temp",                         TYPE_UINT16,    &param_rom_mcu->heater_auto_off_temp);
 
-    // err |= register_flash_parameter("indicator_on_cmd",                             TYPE_UINT16,    &param_rom_mcu->indicator_on_cmd);
-    // err |= register_flash_parameter("indicator_off_cmd",                            TYPE_UINT16,    &param_rom_mcu->indicator_off_cmd);
+    err |= register_flash_parameter("indicator_on_cmd",                             TYPE_UINT16,    &param_rom_mcu->indicator_on_cmd);
+    err |= register_flash_parameter("indicator_off_cmd",                            TYPE_UINT16,    &param_rom_mcu->indicator_off_cmd);
 
-    // err |= register_flash_parameter("alarm_light_on_cmd",                           TYPE_UINT16,    &param_rom_mcu->alarm_light_on_cmd);
-    // err |= register_flash_parameter("alarm_light_off_cmd",                          TYPE_UINT16,    &param_rom_mcu->alarm_light_off_cmd);
+    err |= register_flash_parameter("alarm_light_on_cmd",                           TYPE_UINT16,    &param_rom_mcu->alarm_light_on_cmd);
+    err |= register_flash_parameter("alarm_light_off_cmd",                          TYPE_UINT16,    &param_rom_mcu->alarm_light_off_cmd);
 
-    // err |= register_flash_parameter("buzzer_enable_cmd",                            TYPE_UINT16,    &param_rom_mcu->buzzer_enable_cmd);
-    // err |= register_flash_parameter("buzzer_disable_cmd",                           TYPE_UINT16,    &param_rom_mcu->buzzer_disable_cmd);
-    // err |= register_flash_parameter("buzzer_status",                                TYPE_UINT16,    &param_rom_mcu->buzzer_status);
-    // err |= register_flash_parameter("buzzer_stop_cmd",                              TYPE_UINT16,    &param_rom_mcu->buzzer_stop_cmd);
+    err |= register_flash_parameter("buzzer_enable_cmd",                            TYPE_UINT16,    &param_rom_mcu->buzzer_enable_cmd);
+    err |= register_flash_parameter("buzzer_disable_cmd",                           TYPE_UINT16,    &param_rom_mcu->buzzer_disable_cmd);
+    err |= register_flash_parameter("buzzer_status",                                TYPE_UINT16,    &param_rom_mcu->buzzer_status);
+    err |= register_flash_parameter("buzzer_stop_cmd",                              TYPE_UINT16,    &param_rom_mcu->buzzer_stop_cmd);
 
-    // err |= register_flash_parameter("current_calib_prepare",                        TYPE_UINT16,    &param_rom_mcu->current_calib_prepare);
-    // err |= register_flash_parameter("current_calib_set_value",                      TYPE_UINT16,    &param_rom_mcu->current_calib_set_value);
-    // err |= register_flash_parameter("current_calib_start",                          TYPE_UINT16,    &param_rom_mcu->current_calib_start);
-    // err |= register_flash_parameter("current_calib_verify",                         TYPE_UINT16,    &param_rom_mcu->current_calib_verify);
+    err |= register_flash_parameter("current_calib_prepare",                        TYPE_UINT16,    &param_rom_mcu->current_calib_prepare);
+    err |= register_flash_parameter("current_calib_set_value",                      TYPE_UINT16,    &param_rom_mcu->current_calib_set_value);
+    err |= register_flash_parameter("current_calib_start",                          TYPE_UINT16,    &param_rom_mcu->current_calib_start);
+    err |= register_flash_parameter("current_calib_verify",                         TYPE_UINT16,    &param_rom_mcu->current_calib_verify);
 
-    // err |= register_flash_parameter("short_circuit_release_on",                     TYPE_UINT16,    &param_rom_mcu->short_circuit_release_on);
-    // err |= register_flash_parameter("short_circuit_release_off",                    TYPE_UINT16,    &param_rom_mcu->short_circuit_release_off);
+    err |= register_flash_parameter("short_circuit_release_on",                     TYPE_UINT16,    &param_rom_mcu->short_circuit_release_on);
+    err |= register_flash_parameter("short_circuit_release_off",                    TYPE_UINT16,    &param_rom_mcu->short_circuit_release_off);
 
-    // err |= register_flash_parameter("pre_discharge_on",                             TYPE_UINT16,    &param_rom_mcu->pre_discharge_on);
-    // err |= register_flash_parameter("pre_discharge_off",                            TYPE_UINT16,    &param_rom_mcu->pre_discharge_off);
+    err |= register_flash_parameter("pre_discharge_on",                             TYPE_UINT16,    &param_rom_mcu->pre_discharge_on);
+    err |= register_flash_parameter("pre_discharge_off",                            TYPE_UINT16,    &param_rom_mcu->pre_discharge_off);
 
-    // err |= register_flash_parameter("discharge_mos_on",                             TYPE_UINT16,    &param_rom_mcu->discharge_mos_on);
-    // err |= register_flash_parameter("discharge_mos_off",                            TYPE_UINT16,    &param_rom_mcu->discharge_mos_off);
+    err |= register_flash_parameter("discharge_mos_on",                             TYPE_UINT16,    &param_rom_mcu->discharge_mos_on);
+    err |= register_flash_parameter("discharge_mos_off",                            TYPE_UINT16,    &param_rom_mcu->discharge_mos_off);
 
-    // err |= register_flash_parameter("charge_mos_on",                                TYPE_UINT16,    &param_rom_mcu->charge_mos_on);
-    // err |= register_flash_parameter("charge_mos_off",                               TYPE_UINT16,    &param_rom_mcu->charge_mos_off);
+    err |= register_flash_parameter("charge_mos_on",                                TYPE_UINT16,    &param_rom_mcu->charge_mos_on);
+    err |= register_flash_parameter("charge_mos_off",                               TYPE_UINT16,    &param_rom_mcu->charge_mos_off);
 
-    // err |= register_flash_parameter("fuse_blow_cmd",                                TYPE_UINT16,    &param_rom_mcu->fuse_blow_cmd);
-    // err |= register_flash_parameter("fuse_reset_cmd",                               TYPE_UINT16,    &param_rom_mcu->fuse_reset_cmd);
+    err |= register_flash_parameter("fuse_blow_cmd",                                TYPE_UINT16,    &param_rom_mcu->fuse_blow_cmd);
+    err |= register_flash_parameter("fuse_reset_cmd",                               TYPE_UINT16,    &param_rom_mcu->fuse_reset_cmd);
 
-    // err |= register_flash_parameter("afe_eeprom_save_cmd",                          TYPE_UINT16,    &param_rom_mcu->afe_eeprom_save_cmd);
-    // err |= register_flash_parameter("mcu_protection_save_cmd",                      TYPE_UINT16,    &param_rom_mcu->mcu_protection_save_cmd);
+    err |= register_flash_parameter("afe_eeprom_save_cmd",                          TYPE_UINT16,    &param_rom_mcu->afe_eeprom_save_cmd);
+    err |= register_flash_parameter("mcu_protection_save_cmd",                      TYPE_UINT16,    &param_rom_mcu->mcu_protection_save_cmd);
 
-    // err |= register_flash_parameter("charge_discharge_ctrl",                        TYPE_UINT16,    &param_rom_mcu->charge_discharge_ctrl);
-    // err |= register_flash_parameter("mcu_init_flag",                                TYPE_UINT16,    &param_rom_mcu->mcu_init_flag);
+    err |= register_flash_parameter("charge_discharge_ctrl",                        TYPE_UINT16,    &param_rom_mcu->charge_discharge_ctrl);
+    err |= register_flash_parameter("mcu_init_flag",                                TYPE_UINT16,    &param_rom_mcu->mcu_init_flag);
     printf("err=%d\r\n",err);
     /* --其他 */
     if (err) {
@@ -1013,9 +1012,6 @@ uint8_t parameter_rom_default_init(ROM_MCU_PARAMETER_TYPDEF* param_rom_mcu)
     }
     /* --MCU */
     param_rom_mcu->cell_ov1_alarm                                           = 4015;//3600;
-
-    /*验证测试数据*/
-    param_rom_mcu->cell_iv1_alars                                           = 3500;//3600;
 
     param_rom_mcu->cell_ov1_alarm_delay_time                                = 1565;//1000;
     param_rom_mcu->cell_ov1_release                                         = 3848;//3600;
@@ -1267,7 +1263,6 @@ uint8_t parameter_rom_write(ROM_MCU_PARAMETER_TYPDEF* param_rom_mcu)
     err |= write_flash_parameter("cell_ov1_alarm",                              &param_rom_mcu->cell_ov1_alarm);
     read_flash_parameter("cell_ov1_alarm",                                      &cell_ov1_alarm);
     printf("cell_ov1_alarm = %d\r\n", cell_ov1_alarm);   
-    err |= write_flash_parameter("cell_iv1_alars",                              &param_rom_mcu->cell_iv1_alars);
     // err |= write_flash_parameter("cell_ov1_alarm_delay_time",                   &param_rom_mcu->cell_ov1_alarm_delay_time);
 
     // err |= write_flash_parameter("cell_ov1_release",                            &param_rom_mcu->cell_ov1_release);
@@ -1565,8 +1560,6 @@ uint8_t parameter_rom_read(ROM_MCU_PARAMETER_TYPDEF* param_rom_mcu)
     err |= read_flash_parameter("cell_ov1_alarm",                              &param_rom_mcu->cell_ov1_alarm);
     printf("11111err = %d rom_parameter = %d\r\n",err, param_rom_mcu->cell_ov1_alarm);
     
-    err |= read_flash_parameter("cell_iv1_alars",                              &param_rom_mcu->cell_iv1_alars);
-    printf("11111err = %d rom_parameter = %d\r\n",err, param_rom_mcu->cell_iv1_alars);
     // err |= read_flash_parameter("cell_ov1_alarm_delay_time",                   &param_rom_mcu->cell_ov1_alarm_delay_time);
     // err |= read_flash_parameter("cell_ov1_release",                            &param_rom_mcu->cell_ov1_release);
     // printf("22222err = %d rom_parameter = %d\r\n",err, param_rom_mcu->cell_ov1_alarm_delay_time);
