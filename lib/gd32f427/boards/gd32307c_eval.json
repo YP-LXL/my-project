@@ -1,0 +1,55 @@
+{
+    "build": {
+        "core": "gd32",
+        "cpu": "cortex-m4",
+        "extra_flags": "-DGD32F307xC -DGD32F3 -DGD32F30x -DGD32F307 -DGD32F30X_CL",
+        "f_cpu": "120000000L",
+        "hwids": [
+            [
+                "0x28E9",
+                "0x0189"
+            ]
+        ],
+        "mcu": "gd32f307vct6",
+        "product_line": "GD32F307xC",
+        "spl_series": "GD32F30x",
+        "series": "GD32F307",
+        "spl_sub_series": "CL"
+    },
+    "debug": {
+        "default_tools": [
+            "cmsis-dap"
+        ],
+        "jlink_device": "GD32F307VC",
+        "onboard_tools": [
+            "cmsis-dap"
+        ],
+        "openocd_target": "stm32f1x",
+        "openocd_extra_pre_target_args" : ["-c", "set CPUTAPID 0x2ba01477"],
+        "svd_path": "GD32F30x_CL.svd"
+    },
+    "frameworks": [
+        "spl"
+    ],
+    "name": "GD32307C-EVAL (48k RAM. 256k Flash)",
+    "upload": {
+        "disable_flushing": false,
+        "maximum_ram_size": 49152,
+        "closely_coupled_ram_size": 0,
+        "maximum_size": 262144,
+        "protocol": "cmsis-dap",
+        "protocols": [
+            "jlink",
+            "cmsis-dap",
+            "stlink",
+            "blackmagic",
+            "serial",
+            "dfu"
+        ],
+        "require_upload_port": true,
+        "use_1200bps_touch": false,
+        "wait_for_upload_port": false
+    },
+    "url": "https://www.gigadevice.com/microcontroller/gd32f303vct6/",
+    "vendor": "GigaDevice"
+}

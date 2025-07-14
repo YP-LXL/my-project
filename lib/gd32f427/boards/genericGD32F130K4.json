@@ -1,0 +1,49 @@
+{
+  "build": {
+    "core": "gd32",
+    "cpu": "cortex-m3",
+    "extra_flags": "-DGD32F1 -DGD32F130 -DGD32F1x0 -DGD32F130_150",
+    "f_cpu": "48000000L",
+    "mcu": "gd32f130k4u6",
+    "spl_series": "GD32F1x0",
+    "series": "GD32F130",
+    "variant": "GD32F130K4_GENERIC"
+  },
+  "debug": {
+    "jlink_device": "GD32F130K4",
+    "openocd_target": "stm32f1x",
+    "svd_path": "GD32F1x0.svd",
+    "default_tools": [
+      "stlink"
+    ],
+    "openocd_extra_pre_target_args": [
+      "-c",
+      "set CPUTAPID 0"
+    ]
+  },
+  "frameworks": [
+    "spl",
+    "arduino"
+  ],
+  "name": "GD32F130K4 (4k RAM, 16k Flash)",
+  "upload": {
+    "disable_flushing": false,
+    "maximum_ram_size": 4096,
+    "maximum_size": 16384,
+    "protocol": "stlink",
+    "protocols": [
+      "jlink",
+      "cmsis-dap",
+      "stlink",
+      "blackmagic",
+      "sipeed-rv-debugger",
+      "serial",
+      "gdlinkcli"
+    ],
+    "require_upload_port": true,
+    "use_1200bps_touch": false,
+    "wait_for_upload_port": false
+  },
+  "url": "https://www.gigadevice.com/microcontroller/gd32f130k4u6/",
+  "vendor": "GigaDevice"
+}

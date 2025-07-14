@@ -1,0 +1,5 @@
+# 全局头文件目录
+
+- `common.h`：通用宏和函数定义。
+- `FreeRTOSConfig.h`：FreeRTOS 配置文件。
+- `project_config.h`：项目整体配置文件。

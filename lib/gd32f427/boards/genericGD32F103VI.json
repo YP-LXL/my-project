@@ -1,0 +1,59 @@
+{
+  "build": {
+    "core": "gd32",
+    "cpu": "cortex-m3",
+    "extra_flags": "-DGD32F1 -DGD32F103 -DGD32F10x -DGD32F10X_XD",
+    "f_cpu": "108000000L",
+    "mcu": "gd32f103vit6",
+    "spl_series": "GD32F10x",
+    "series": "GD32F103",
+    "hwids": [
+      [
+        "0x1EAF",
+        "0x0003"
+      ],
+      [
+        "0x1EAF",
+        "0x0004"
+      ]
+    ],
+    "spl_sub_series": "XD"
+  },
+  "debug": {
+    "jlink_device": "GD32F103VI",
+    "openocd_target": "stm32f1x",
+    "svd_path": "GD32F10x_XD.svd",
+    "default_tools": [
+      "stlink"
+    ],
+    "openocd_extra_pre_target_args": [
+      "-c",
+      "set CPUTAPID 0"
+    ]
+  },
+  "frameworks": [
+    "spl"
+  ],
+  "name": "GD32F103VI (96k RAM, 2048k Flash)",
+  "upload": {
+    "disable_flushing": false,
+    "maximum_ram_size": 98304,
+    "maximum_size": 2097152,
+    "protocol": "stlink",
+    "protocols": [
+      "jlink",
+      "cmsis-dap",
+      "stlink",
+      "blackmagic",
+      "sipeed-rv-debugger",
+      "serial",
+      "gdlinkcli",
+      "dfu"
+    ],
+    "require_upload_port": true,
+    "use_1200bps_touch": false,
+    "wait_for_upload_port": false
+  },
+  "url": "https://www.gigadevice.com/microcontroller/gd32f103vit6/",
+  "vendor": "GigaDevice"
+}

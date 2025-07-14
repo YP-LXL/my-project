@@ -1,0 +1,3 @@
+[submodule "lib/gd32f427"]
+	path = lib/gd32f427
+	url = https://github.com/CommunityGD32Cores/platform-gd32.git

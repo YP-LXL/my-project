@@ -1,0 +1,164 @@
+{
+  "name": "gd32",
+  "title": "GD GD32",
+  "description": "GigaDevice GD32 MCU has many years of industry-leading design experience, as it has already launched a huge variety of 32bit general purpose microcontrollers, based on Arm Cortex-M and RISC-V cores. GigaDevice continues to empower various industry fields, providing high performance and rich in resources MCUs.",
+  "homepage": "http://www.gd32mcu.com/en/product",
+  "license": "Apache-2.0",
+  "keywords": [
+    "dev-platform",
+    "ARM",
+    "Cortex-M",
+    "GigaDevice",
+    "GD32"
+  ],
+  "engines": {
+    "platformio": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CommunityGD32Cores/platform-gd32"
+  },
+  "version": "1.0.0",
+  "frameworks": {
+    "mbed": {
+      "package": "framework-mbed",
+      "script": "builder/frameworks/mbed.py",
+      "description": "Arm Mbed OS is an open source embedded operating system designed specifically for the 'things' in the Internet of Things. It includes all the features you need to develop a connected product based on an Arm Cortex-M microcontroller, including security, connectivity, an RTOS and drivers for sensors and I/O devices",
+      "homepage": "https://os.mbed.com/",
+      "title": "Mbed"
+    },
+    "spl": {
+      "package": "framework-spl-gd32",
+      "script": "builder/frameworks/spl.py",
+      "description": "The GigaDevice Standard Peripheral Library provides a set of functions for handling the peripherals on the GD32 family of microcontrollers.",
+      "homepage": "http://www.gd32mcu.com/en/download/",
+      "title": "Standard Peripheral Library"
+    },
+    "arduino": {
+      "package": "framework-arduinogd32",
+      "script": "builder/frameworks/arduino.py",
+      "description": "Arduino Wiring-based Framework allows writing cross-platform software to control devices attached to a wide range of Arduino boards to create all kinds of creative coding, interactive objects, spaces or physical experiences",
+      "homepage": "https://github.com/CommunityGD32Cores/ArduinoCore-GD32",
+      "title": "Arduino"
+    },
+    "wifi-sdk": {
+      "package": "framework-wifi-sdk-gd32",
+      "script": "builder/frameworks/wifi-sdk.py",
+      "description": "GD32W51x WIFI SDK",
+      "homepage": "http://www.gd32mcu.com/en/download/0?kw=GD32W5",
+      "title": "WiFi SDK"
+    },
+    "zephyr": {
+      "package": "framework-zephyr",
+      "script": "builder/frameworks/zephyr.py",
+      "description": "The Zephyr Project is a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with safety and security in mind",
+      "homepage": "https://www.zephyrproject.org",
+      "title": "Zephyr RTOS"
+    }
+  },
+  "packages": {
+    "toolchain-gccarmnoneeabi": {
+      "type": "toolchain",
+      "owner": "platformio",
+      "version": "~1.90201.0",
+      "optionalVersions": [
+        "~1.60301.0",
+        "~1.80201.0",
+        "~1.90201.0"
+      ]
+    },
+    "toolchain-riscv-nuclei": {
+      "type": "toolchain",
+      "optional": true,
+      "version": "https://github.com/CommunityGD32Cores/toolchain-riscv-nuclei.git#windows_x64"
+    },
+    "framework-mbed": {
+      "type": "framework",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~6.61700.0",
+      "optionalVersions": [
+        "~6.51506.0"
+      ]
+    },
+    "framework-spl-gd32": {
+      "type": "framework",
+      "optional": true,
+      "owner": "maxgerhardt",
+      "version": "https://github.com/CommunityGD32Cores/gd32-pio-spl-package.git"
+    },
+    "framework-arduinogd32": {
+      "type": "framework",
+      "optional": true,
+      "owner": "maxgerhardt",
+      "version": "https://github.com/CommunityGD32Cores/ArduinoCore-GD32.git"
+    },
+    "framework-wifi-sdk-gd32": {
+      "type": "framework",
+      "optional": true,
+      "owner": "maxgerhardt",
+      "version": "https://github.com/CommunityGD32Cores/gd32-pio-wifi-sdk.git"
+    },
+    "framework-zephyr": {
+      "type": "framework",
+      "optional": true,
+      "owner": "platformio",
+      "version": "https://github.com/CommunityGD32Cores/zephyr.git#v4.0-branch-package"
+    },
+    "tool-sreccat": {
+      "owner": "platformio",
+      "version": "~1.164.0",
+      "optional": true
+    },
+    "tool-stm32duino": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.0.1"
+    },
+    "tool-openocd-gd32": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "communitygd32cores",
+      "version": "~2.1100.0"
+    },
+    "tool-gdlinkcli": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "communitygd32cores",
+      "version": "https://github.com/CommunityGD32Cores/pio-gd32-gdlinkcli.git"
+    },
+    "tool-jlink": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "^1.77001.0"
+    },
+    "tool-dfuutil": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.9.190708"
+    },
+    "tool-cmake": {
+      "optional": true,
+      "owner": "platformio",
+      "version": "~3.21.0"
+    },
+    "tool-dtc": {
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.4.7"
+    },
+    "tool-ninja": {
+      "optional": true,
+      "owner": "platformio",
+      "version": "^1.7.0"
+    },
+    "tool-gperf": {
+      "optional": true,
+      "owner": "platformio",
+      "version": "^3.0.0"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "build": {
+        "core": "gd32",
+        "cpu": "cortex-m4",
+        "extra_flags": "-DGD32E103xB -DGD32E1 -DGD32E10X",
+        "f_cpu": "120000000L",
+        "mcu": "gd32e103vbt6",
+        "product_line": "GD32E103xB",
+        "spl_series": "GD32E10x",
+        "series": "GD32E103"
+    },
+    "connectivity": [],
+    "debug": {
+        "default_tools": [
+            "cmsis-dap"
+        ],
+        "jlink_device": "GD32E103VB",
+        "onboard_tools": [
+            "cmsis-dap"
+        ],
+        "openocd_target": "stm32f1x",
+        "svd_path": "GD32E10x.svd"
+    },
+    "frameworks": [
+        "spl"
+    ],
+    "name": "GD32E103V-EVAL",
+    "upload": {
+        "maximum_ram_size": 32768,
+        "maximum_size": 131072,
+        "protocol": "cmsis-dap",
+        "protocols": [
+            "cmsis-dap",
+            "jlink",
+            "stlink",
+            "blackmagic",
+            "mbed"
+        ]
+    },
+    "url": "https://www.gigadevice.com/products/microcontrollers/gd32-development-tools/gd32-evaluation-boards/",
+    "vendor": "GigaDevice"
+}
